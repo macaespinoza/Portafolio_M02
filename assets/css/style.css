@@ -1,0 +1,285 @@
+:root {
+    --morado: #3d1650ff;
+    --rosado: #fc789eff;
+    --verde-bosque: #083e35ff;
+    --turquesa: #74ecaaff;
+    --amarillo: #eefc88ff;
+    --blanco: #fcfdf3ff;
+    --negro: #161616ff;
+}
+
+
+body {
+    background: var(--amarillo);
+    background: radial-gradient(circle, #fbffd6 0%, #eefc88 100%);
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#titulo-maca {
+    font-family: "Abril Fatface", serif;
+    color: var(--turquesa);
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.8;
+}
+
+.navbar-maca {
+    background: linear-gradient(to right, #36bb72 0%, #74ecaa 50%);
+    background-color: var(--turquesa);
+    border-bottom: 4px solid var(--blanco);
+
+}
+
+.navbar-maca a {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--amarillo);
+    font-size: 2rem;
+    text-shadow:
+        1px 1px 0px #fc789eff,
+        2px 2px 0px #fc789eff,
+        3px 3px 0px #fc789eff,
+        4px 4px 0px #fc789eff,
+        5px 5px 5px #07110f33;
+}
+
+
+.hero-box {
+
+    background-image: url('../img/fondo_hero05.png');
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+
+    /* box-shadow: 0 8px 20px #60690033;
+    margin: 3rem auto;
+    border: 1px solid #ffffff4d; */
+
+}
+
+
+.hero-text {
+    font-size: 5rem;
+    color: var(--blanco);
+    text-shadow:
+        1px 1px 0px #929292ff,
+        2px 2px 0px #929292ff,
+        3px 3px 0px #929292ff,
+        4px 4px 0px #929292ff,
+        5px 5px 0px #929292ff,
+        6px 6px 0px #929292ff,
+
+        10px 10px 10px #10110199;
+    font-family: "Abril Fatface", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 0.9;
+    /* mask: linear-gradient(transparent, black, transparent);
+    backdrop-filter: blur(8px); */
+
+}
+
+
+.subtitulo {
+    margin-top: 0.9rem;
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.perfil-container {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -30px;
+}
+
+.cover {
+    background: linear-gradient(to right, #36bb72 0%, #74ecaa 50%);
+    height: 80px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: -20px -20px 40px -20px;
+}
+
+.profile-card h1,
+.habilidades h1 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 60px;
+    color: var(--rosado);
+    font-size: 2rem;
+    text-shadow:
+        1px 1px 0px #083e35ff,
+        2px 2px 0px #083e35ff,
+        3px 3px 0px #083e35ff,
+        4px 4px 0px #083e35ff,
+        5px 5px 5px #07110f33;
+}
+
+.profile-card h4,
+.habilidades h4 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--verde-bosque);
+    font-size: 1.4rem;
+    margin-left: 60px;
+    text-shadow:
+        1px 1px 0px #74ecaaff,
+        2px 2px 0px #74ecaaff,
+        3px 3px 0px #74ecaaff;
+
+}
+
+.profile-card p,
+.habilidades p {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2e2e2e;
+    /* text-shadow: #dbdbdb 2px 2px 2px; */
+}
+
+.avatar {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #f5f5f5;
+    object-fit: cover;
+    margin-top: -200px;
+    margin-bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card,
+.habilidades {
+    background-image:
+        linear-gradient(135deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(225deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(45deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(315deg, #f1f1f1 25%, #fdfdfd 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px #00000014;
+}
+
+
+
+.descripcion {
+    margin-top: 20px;
+}
+
+.bajada {
+    font-weight: 500;
+}
+
+.iconosvg {
+    width: 75px;
+    height: 75px;
+    fill: var(--amarillo);
+    filter:
+        drop-shadow(1px 1px 0px var(--verde-bosque)) drop-shadow(2px 2px 0px var(--verde-bosque)) drop-shadow(3px 3px 0px var(--verde-bosque)) drop-shadow(4px 4px 5px #00000055);
+}
+
+.card-title {
+    background-color: var(--verde-bosque);
+    filter: drop-shadow(4px 4px 5px #00000055);
+    padding: 3px 8px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: var(--amarillo);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow:
+        2px 2px 3px #07110f33;
+
+}
+
+.card {
+    border-radius: 30px;
+    /* backdrop-filter: blur(4px); */
+    background-color: #ffffff00;
+
+}
+
+
+.proyectos h1 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 60px;
+    color: var(--rosado);
+    font-size: 2rem;
+    text-shadow:
+        1px 1px 0px #083e35ff,
+        2px 2px 0px #083e35ff,
+        3px 3px 0px #083e35ff,
+        4px 4px 0px #083e35ff,
+        5px 5px 5px #07110f33;
+}
+
+.proyectos h4 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--verde-bosque);
+    font-size: 1.4rem;
+    margin-left: 60px;
+    text-shadow:
+        1px 1px 0px #74ecaaff,
+        2px 2px 0px #74ecaaff,
+        3px 3px 0px #74ecaaff;
+
+}
+
+.proyectos p {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2e2e2e;
+    /* text-shadow: #dbdbdb 2px 2px 2px; */
+}
+
+
+.proyectos {
+    background-image:
+        linear-gradient(135deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(225deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(45deg, #f1f1f1 25%, transparent 25%),
+        linear-gradient(315deg, #f1f1f1 25%, #fdfdfd 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px #00000014;
+}
+
+.proyectos img {
+    border-radius: 20px;
+}
+
+
+.footer {
+    background: linear-gradient(to right, #36bb72 0%, #74ecaa 50%);
+    background-color: var(--turquesa);
+    border-top: 4px solid var(--blanco);
+
+}
+
+.footer p {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: var(--verde-bosque);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer i {
+    color: var(--verde-bosque);
+}
