@@ -1,3 +1,4 @@
+/* Aquí apliqué las variables de color, para poder modificarlas fácilmente a futuro */
 :root {
     --morado: #3d1650ff;
     --rosado: #fc789eff;
@@ -8,7 +9,7 @@
     --negro: #161616ff;
 }
 
-
+/* Aplicación de gradientes CSS, aprendí a entenderlas gracias a https://cssgradient.io/ */
 body {
     background: var(--amarillo);
     background: radial-gradient(circle, #fbffd6 0%, #eefc88 100%);
@@ -43,6 +44,10 @@ body {
         5px 5px 5px #07110f33;
 }
 
+/*  La idea a futuro, sería reemplazar la imagen de fondo (fondo_hero.png) por un video *.webm
+    en loop con canal alpha, de los mismos elementos (o algo similar) moviéndose sutilmente.
+    Hasta hace 5 minutos pensaba que sólo *.mov soportaba canal alpha pero acabo de descubrir
+    este nuevo formato de video, dice tener alta compatibilidad con HMTL5, investigaré a fondo.  */
 
 .hero-box {
 
@@ -56,12 +61,12 @@ body {
     justify-content: center;
     margin-top: -50px;
 
-    /* box-shadow: 0 8px 20px #60690033;
-    margin: 3rem auto;
-    border: 1px solid #ffffff4d; */
-
 }
 
+/* Quería lograr un efecto 3D con el texto (tipo EXTRUDE) con CSS, y luego de experimentar
+un poco descubrí que se podía aplicar más de 1 sombra a una clase, así que se me ocurrió
+duplicar varias veces una sombra sólida para simular la extrusión, y al final aplicar una sombra
+suave para dar ilusión de volumen. */
 
 .hero-text {
     font-size: 5rem;
@@ -103,6 +108,8 @@ body {
     border-top-right-radius: 25px;
     margin: -20px -20px 40px -20px;
 }
+
+/* Aquí agrupé algunas clases para ahorrar código */
 
 .profile-card h1,
 .habilidades h1 {
@@ -156,6 +163,13 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+/* A continuación, copié un pattern para usar de fondo hecho en CSS,
+    al principio iba a usar una imagen pero luego me pregunté si se 
+    podía hacer algo con css directamente, un google después descubrí:
+    https://www.magicpattern.design/tools/css-backgrounds
+    me encantó la técnica y me gustaría experimentar más por mi cuenta.  */
+
 .profile-card,
 .habilidades {
     background-image:
@@ -181,13 +195,31 @@ body {
     font-weight: 500;
 }
 
+/* Estilos aplicados a imágenes SVG */
+
 .iconosvg {
     width: 75px;
     height: 75px;
     fill: var(--amarillo);
     filter:
-        drop-shadow(1px 1px 0px var(--verde-bosque)) drop-shadow(2px 2px 0px var(--verde-bosque)) drop-shadow(3px 3px 0px var(--verde-bosque)) drop-shadow(4px 4px 5px #00000055);
+        drop-shadow(1px 1px 0px var(--verde-bosque)) 
+        drop-shadow(2px 2px 0px var(--verde-bosque)) 
+        drop-shadow(3px 3px 0px var(--verde-bosque)) 
+        drop-shadow(4px 4px 5px #00000055);
 }
+
+.iconosvg:hover {
+    width: 75px;
+    height: 75px;
+    fill: var(--turquesa);
+    filter:
+        drop-shadow(1px 1px 0px var(--verde-bosque)) 
+        drop-shadow(2px 2px 0px var(--verde-bosque)) 
+        drop-shadow(3px 3px 0px var(--verde-bosque)) 
+        drop-shadow(4px 4px 5px #00000055);
+}
+
+
 
 .card-title {
     background-color: var(--verde-bosque);
@@ -264,6 +296,14 @@ body {
     border-radius: 20px;
 }
 
+.proyectos .card img {
+  height: 370px;    
+  object-fit: cover; 
+  object-position: top;
+  width: 100%;
+  box-shadow: 0 2px 10px #00000055;
+}
+
 
 .footer {
     background: linear-gradient(to right, #36bb72 0%, #74ecaa 50%);
@@ -279,6 +319,8 @@ body {
     font-weight: 600;
     margin: 0;
 }
+
+/* No pensé que funcionaría, pero apliqué un estilo a los <i> y funcionó, mich. */
 
 .footer i {
     color: var(--verde-bosque);

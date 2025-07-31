@@ -25,9 +25,16 @@
 
 </head>
 
+<!-- EVALUACIÓN DE PORTAFOLIO - MÓDULO 02 - MACARENA ESPINOZA GATICA -->
+ <!-- Esta es una primera versión de mi portafolio, me gusta como está quedando, pero soy
+  conciente de que está muy chillón y "poco serio/profesional", me cuesta calibrar un poco 
+  eso, lo iré puliendo durante el Bootcamp para lograr un estilo más equilibrado.  -->
+
 <body>
 
   <!-- Barra de Navegación -->
+  <!-- Los textos de la barra de navegación tienen un efecto en el Hover que fue completamente
+   no intencional, no estoy segura por qué ocurre porque no lo agregué en CSS, accidente feliz -->
 
   <nav class="navbar navbar-expand-lg navbar-maca fixed-top shadow-sm">
     <div class="container-fluid">
@@ -100,7 +107,13 @@
 
             <div class="row">
 
-
+              <!-- En la sección de Habilidades mi idea era poner los logos como imagen .png,
+               pero luego no me gustó cómo se veían en color negro, ni menos de distintos colores 
+               (colores originales de cada logo),y pensando en la mantenibilidad a futuro, y mis 
+               constantes cambios de ideas/estilos, decidí convertirlas a .svg en Adobe Illustrator,
+               pero al aplicar estilos en CSS no funcionaba, investigué y descubrí que para que sean
+               editables en CSS deben insertarse como <svg> en el código, y para obtener el código
+                de cada imagen, había que abrirlas en VisualStudio y copiar el código. -->
 
               <!-- TARJETA HTML -->
               <div class="col-md-3 mb-4">
@@ -237,6 +250,10 @@
               </div>
 
 
+              <!-- El código de este logo es distinto a los demás, porque lo descargué directamente
+               como svg de la página oficial. Veo que tiene algunos parámetros como el estilo "enable-background" 
+               y la etiqueta <polygon points>, lo que me parece muy interesante para investigar a futuro -->
+
               <!-- TARJETA ANGULAR -->
               <div class="col-md-3 mb-4">
                 <div class="card border-0 align-items-center">
@@ -355,36 +372,36 @@
 
             <d class="row mx-4">
 
-              <!-- CARD 1 -->
+              <!-- Proyecto 1 -->
               <div class="col-md-4 mb-4">
                 <div class="card border-0 text-center">
                   <div class="card-body">
                     <h5 class="card-title">CineFlash</h5>
                     <img src="assets/img/proyecto01_cineflash.jpeg" alt="HTML5 Logo" class="img-fluid mb-3">
-                    <p class="card-text">Ticketera en Javascript para comprar entradas al cine</p>
+                    <p class="card-text">Ticketera para comprar entradas al cine.</p>
                   </div>
                 </div>
               </div>
 
-              <!-- CARD 2 -->
+              <!-- Proyecto 2 -->
               <div class="col-md-4 mb-4">
                 <div class="card border-0 text-center">
                   <div class="card-body">
-                    <h5 class="card-title">CineFlash</h5>
-                    <img src="assets/img/proyecto01_cineflash.jpeg" alt="HTML5 Logo" class="img-fluid mb-3">
-                    <p class="card-text">Ticketera en Javascript para comprar entradas al cine</p>
+                    <h5 class="card-title">Ciberseguridad</h5>
+                    <img src="assets/img/proyecto03_ciberseguridad.jpeg" alt="HTML5 Logo" class="img-fluid mb-3">
+                    <p class="card-text">Web informativa sobre seguridad en internet.</p>
                   </div>
                 </div>
               </div>
 
 
-              <!-- CARD 3 -->
+              <!-- Proyecto 3 -->
               <div class="col-md-4 mb-4">
                 <div class="card border-0 text-center">
                   <div class="card-body">
-                    <h5 class="card-title">CineFlash</h5>
-                    <img src="assets/img/proyecto01_cineflash.jpeg" alt="HTML5 Logo" class="img-fluid mb-3">
-                    <p class="card-text">Ticketera en Javascript para comprar entradas al cine</p>
+                    <h5 class="card-title">Autofix</h5>
+                    <img src="assets/img/proyecto02_autofix.jpeg" alt="HTML5 Logo" class="img-fluid mb-3">
+                    <p class="card-text">Aplicación para reservar citas de servicios.</p>
                   </div>
                 </div>
               </div>
@@ -393,19 +410,21 @@
 
 
   <!-- Footer -->
+   <!-- Me tiene con TOC el hecho de que se vean unos guiones entremedio de los iconos de mis rrss
+        no sé de dónde vienen ni cómo eliminarlos, intenté con CSS pero no lo logré :(  -->
 
   <footer class="bg-dark text-center text-white py-4 footer">
     <p class="mb-2">
       Hecho con <i class="fas fa-heart text-danger"></i> por Maca
     </p>
     <div>
-      <a href="https://www.linkedin.com/in/tuusuario" class="text-white mx-2" target="_blank">
+      <a href="https://www.linkedin.com/in/maca-espinoza-gatica" class="text-white mx-2" target="_blank">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://github.com/tuusuario" class="text-white mx-2" target="_blank">
+      <a href="https://github.com/macaespinoza" class="text-white mx-2" target="_blank">
         <i class="fab fa-github fa-2x"></i>
       </a>
-      <a href="https://www.instagram.com/tuusuario" class="text-white mx-2" target="_blank">
+      <a href="https://www.instagram.com/mackabra/" class="text-white mx-2" target="_blank">
         <i class="fab fa-instagram fa-2x"></i>
       </a>
     </div>
